@@ -1,3 +1,4 @@
+/* LOGO */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -9,6 +10,11 @@
   text-decoration: none;
 }
 
+.logo-accent {
+  color: black;
+}
+
+/* HEADER */
 .menu-link {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -17,6 +23,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  text-decoration: none;
 }
 
 .menu-link:hover,
@@ -24,22 +31,46 @@
   color: #2196f3;
 }
 
-.mail-link,
-.tel-link {
+.header-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  text-decoration: none;
 }
 
-.mail-link:hover,
-.mail-link:focus,
-.tel-link:hover,
-.tel-link:focus {
+.header-link:hover,
+.header-link:focus {
   color: #2196f3;
 }
+
+.subtitle,
+.menu-item,
+.menu-contact,
+.menu-footer,
+.menu-content,
+.menu-team {
+  list-style: none;
+}
+
+/* MAIN CONTENT */
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #2f303a;
+}
+
+/* BUTTON */
 
 .main-btn {
   font-family: 'Roboto', sans-serif;
@@ -55,6 +86,89 @@
   cursor: pointer;
 }
 
-.logo-accent {
-  color: black;
+/* SUBTITLE */
+
+.subtitle-list {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* ABOUT US */
+
+.content {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* TEAM */
+
+.team {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-position {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* FOOTER */
+
+.footer-map {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer {
+  background: #2f303a;
+}
+
+.footer-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
