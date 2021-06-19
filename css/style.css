@@ -10,25 +10,20 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--white-color);
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
 
-ul {
+.list {
   list-style: none;
 }
-
-/* футер контакты rgba(255, 255, 255, 0.6) */
-/* фон хедера и футера ##2F303A */
-/* фон команды ##F5F4FA */
 
 /* ========= HEADER ========= */
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -42,17 +37,20 @@ ul {
 }
 
 .menu-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: inherit;
   text-decoration: none;
 }
 
-.menu-link-blue {
+.menu .menu-link.current {
   color: var(--accent-color);
+}
+
+.menu-link.contact {
+  color: var(--title-text-color);
 }
 
 .menu-link:hover,
@@ -62,14 +60,6 @@ ul {
   color: var(--accent-color);
 }
 
-.menu-contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-  text-decoration: none;
-}
 /* =========END HEADER ========= */
 
 /* ========= HERO ========= */
@@ -79,7 +69,6 @@ ul {
 }
 
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -90,13 +79,10 @@ ul {
 }
 
 .main-btn {
-  font-style: normal;
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  text-align: center;
-  align-items: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -110,31 +96,22 @@ ul {
 /* ========= SECTION ========= */
 
 .subtitle-list {
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 
 .text {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
 .section-title {
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .team {
@@ -142,42 +119,29 @@ ul {
 }
 
 .team-item {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .team-position {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
 .modal-btn {
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   cursor: pointer;
 }
 
-.modal-btn-blue {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
+.modal-btn.blue {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -189,20 +153,15 @@ ul {
 }
 
 .portfolio-name {
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
   transform: rotate(0.26deg);
 }
 
 .portfolio-desc {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   transform: rotate(0.26deg);
 }
@@ -210,28 +169,20 @@ ul {
 
 /* ========= FOOTER ========= */
 
-.footer-map {
+.footer-link {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
+  color: var(--footer-logo);
   text-decoration: none;
+}
+
+.footer-link.map {
+  color: var(--white-color);
 }
 
 .footer {
-  background-color: #2f303a;
-}
-
-.footer-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-logo);
-  text-decoration: none;
+  background-color: var(--main-background);
 }
 
 /* =========END FOOTER ========= */
